@@ -1,0 +1,203 @@
+*{
+box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the Header */
+.header{
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* this will creath three/four columns that float next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    text-align: center;
+    border-style: none;
+}
+
+/* clear the float after the column */
+.row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/* style the footer*/
+.footer{
+    background-color: #353;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* responsive layout */
+@media (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #353;
+}
+
+li{
+    float:left;
+    border-right: 3px solid;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #333;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+/*Contact Page Styles */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Style submit button */
+input[type="submit"]{
+    background-color: #04aa6d;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* Style button with a hover*/
+input[type="submit"]:hover{
+    background-color: #228f28;
+}
+.container{
+    border-radius: 5px;
+    /* background-color: #228f28; */
+    padding: 10px;
+    float: center;
+    text-align: center;
+    
+}
+
+/* About us page CSS */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-section{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(47, 107, 47);
+    color: #ffffff;
+}
+
+.container::after,.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.title{
+    color: #000000
+}
+
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover
+{
+    background-color: #555555
+}
+
+/* News section */
+.news-section{
+    text-align: center;
+    background-color: #740000;
+    
+}
+.news-box{
+    padding: 50px;
+    color: #ffd900;
+    border: 1px solid;
+    float: center;
+}
+
+/* footer text left */
+.footer-text-left{
+    font-size: 25px;
+    padding-left: 40px;
+    float: left;
+    word-spacing: 20px;
+}
+a.menu:hover{
+    background-color: #ffff00;
+    font-size: 20px;
+}
+.menu{
+    color: #0300c2;
+}
+
+/* footer text right */
+.footer-content-right{
+    padding-right: 40px;
+    margin-top: 20px;
+    float: right;
+
+}
+
+.icon-style{
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.icon-style.hover{
+    background-color: #ffff00;
+    padding: 5px;
+}
+
+a:link{
+    text-decoration: none;
+}
